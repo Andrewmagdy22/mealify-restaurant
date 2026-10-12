@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mealify- Restaurant landing page</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com  ">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Meal<span>ify</span></div>
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#chefs">Chefs</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="theme-toggle" id="themeToggle">🌙</button>
+    
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="hero-text">
+            <h1>Enjoy Your Healthy<br>Delicious Food</h1>
+        <p>Fresh ingredients, bold flavors, and a dining experience crafted to satisfy every taste — from traditional classics to modern creations.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn-primary">Book a Table</a>
+                <a href="#" class="btn-video" id="videoButton">Watch Video</a>
+        </div>
+        </div>
+        <div class="hero-image">
+            <img src="images/hero-food-jpg.jpg" alt="Delicious food dish">
+        </div>
+    </header>
+
+    <section class="chefs" id="chefs">
+        <h2>Our Professional Chefs</h2>
+        <div class="chefs-grid">
+            <div class="chef-card">
+                <div class="chef-image">
+                    <img src="images/chef-1.jpg" alt="Walter White">
+                    <div class="chef-social">
+                        <a href="#">tw</a>
+                        <a href="#">fb</a>
+                        <a href="#">ig</a>
+                    </div>
+                </div>
+                <h3>Walter White</h3>
+                <p class="chef-role">Master Chef</p>
+            </div>
+             <div class="chef-card">
+                <div class="chef-image">
+                    <img src="images/chef-2.jpg" alt="Sarah Johnson">
+                    <div class="chef-social">
+                        <a href="#">tw</a>
+                        <a href="#">fb</a>
+                        <a href="#">ig</a>
+                    </div>
+                </div>
+                <h3>Sarah Johnson</h3>
+                <p class="chef-role">Patissier</p>
+        </div>
+         <div class="chef-card">
+                <div class="chef-image">
+                    <img src="images/chef-3.jpg" alt="William Anderson">
+                    <div class="chef-social">
+                        <a href="#">tw</a>
+                        <a href="#">fb</a>
+                        <a href="#">ig</a>
+                    </div>
+                </div>
+                 <h3>William Anderson</h3>
+                <p class="chef-role">Cook</p>
+         </div>
+        </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <h2>Check Our Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="images/pizza.jpg" alt="Pizza">
+            </div>
+            <div class="gallery-item">
+                <img src="images/steak.jpg" alt="Steak">
+            </div>
+            <div class="gallery-item">
+                <img src="images/burger.jpg" alt="Burger">
+            </div>
+            <div class="gallery-item">
+                <img src="images/pizza-2.jpg" alt="Pizza2">
+            </div>
+            <div class="gallery-item">
+                <img src="images/chichen.jpg" alt="Chicken">
+            </div>
+            <div class="gallery-item">
+                <img src="images/kebab.jpg" alt="Kabab">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact" id="contact">
+    <h2>Get In Touch</h2>
+    <div class="contact-wrapper">
+        <div class="contact-info">
+            <div class="info-item">
+                <span class="info-label">Address</span>
+                <span class="info-value">123 Food Street, Cairo, Egypt</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Phone</span>
+                <span class="info-value">+20 100 123 4567</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Email</span>
+                <span class="info-value">hello@mealify.com</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Opening Hours</span>
+                <span class="info-value">Daily: 10:00 AM - 11:00 PM</span>
+            </div>
+        </div>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+    </div>
+</section>
+
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-about">
+            <h3>Meal<span>ify</span></h3>
+            <p>Fresh ingredients, bold flavors, and a dining experience crafted to satisfy every taste.</p>
+            <div class="social-icons">
+                <a href="#">fb</a>
+                <a href="#">tw</a>
+                <a href="#">in</a>
+                <a href="#">ig</a>
+            </div>
+        </div>
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#chefs">Chefs</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-newsletter">
+            <h4>Newsletter</h4>
+            <p>Subscribe to get our latest offers.</p>
+            <div class="Newsletter-form">
+                <input type="email" placeholder="Your Email"
+                <button type="submit">→</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Mealify. All rights reserved</p>
+    </div>
+</footer>
+            <script src="script.js"></script>
+</body>
+</html>
