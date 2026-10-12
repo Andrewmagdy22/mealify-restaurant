@@ -35,7 +35,8 @@ section, header {
   left: 0;
   width: 100%;
   z-index: 100;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #eee;
 }
 .navbar .logo {
   font-family: "playfair Display", serif;
@@ -444,7 +445,11 @@ body.dark-mode {
 }
 body.dark-mode .navbar {
   background-color: #1f1f2e;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid #2a2a3a;
+}
+body.dark-mode .navbar .nav-links {
+  background-color: #1f1f2e;
 }
 body.dark-mode .chef-card,
 body.dark-mode .contact-form input,

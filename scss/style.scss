@@ -58,7 +58,8 @@ section, header {
     left: 0;
     width: 100%;
     z-index: 100;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #eee;
 
     .logo {
         font-family: $font-heading;
@@ -519,7 +520,12 @@ section, header {
 
     .navbar {
         background-color: $dark-card;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+        border-bottom: 1px solid #2a2a3a;
+    }
+
+    .navbar .nav-links {
+        background-color: $dark-card;
     }
 
     .chef-card,
