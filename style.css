@@ -448,7 +448,7 @@ section, header {
 }
 
 body.dark-mode {
-  background-color: #e8e8f0;
+  background-color: #16161f;
   color: #e8e8f0;
 }
 body.dark-mode .navbar {
@@ -489,6 +489,9 @@ body.dark-mode .theme-toggle {
 }
 body.dark-mode .btn-primary {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+body.dark-mode .menu-toggle span {
+  background-color: #e8e8f0;
 }
 
 @media (max-width: 768px) {

@@ -523,7 +523,7 @@ section, header {
 
 
  body.dark-mode {
-    background-color: $dark-text;
+    background-color: $dark-bg;
     color: $dark-text;
 
     .navbar {
@@ -571,6 +571,9 @@ section, header {
 
     .btn-primary {
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    }
+    .menu-toggle span {
+        background-color: $dark-text;
     }
 }
 
