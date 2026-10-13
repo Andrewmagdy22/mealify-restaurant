@@ -70,18 +70,26 @@ section, header {
             color: $primary-color;
         }
     }
-    .menu-toggle {
-        display: none;
-        flex-direction: column;
-        gap: 5px;
-        cursor: pointer;
+   .menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    padding: 8px;
+    z-index: 102;
 
-        span{
-            width: 26px;
-            list-style: 3px;
-            background-color: $dark-color;
-        }
+    span {
+        display: block;
+        width: 26px;
+        height: 3px;
+        background-color: $dark-color;
+        border-radius: 3px;
     }
+}
 
     .nav-links{
         display: flex;
@@ -515,7 +523,7 @@ section, header {
 
 
  body.dark-mode {
-    background-color: $dark-bg;
+    background-color: $dark-text;
     color: $dark-text;
 
     .navbar {
@@ -570,31 +578,32 @@ section, header {
 @media (max-width: 768px) {
 
     .navbar {
-        padding: 15px 20px;
+    padding: 15px 20px;
 
-        .menu-toggle {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        gap: 20px;
+        margin: 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: $white;
+        padding: 20px 0;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+        &.active {
             display: flex;
         }
-
-        .nav-links {
-            display: none;
-            flex-direction: column;
-            width: 100%;
-            text-align: center;
-            gap: 20px;
-            margin-top: 20px;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: $white;
-            padding: 20px 0;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-
-            &.active {
-                display: flex;
-            }
-        }
     }
+}
 
     .hero {
         flex-direction: column;
